@@ -6,6 +6,8 @@ Micro tips for mobile web dev.
 
 #iOS
 ###JavaScript
+-для блокирования браузерного скрола без блокировки стандартного  поведения ссылок необходимо сделать `e.preventDefault();` в первом `touchmove`
+
 ###CSS
 
 #Android
