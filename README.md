@@ -24,3 +24,15 @@ Micro tips for mobile web dev.
 ##Android FireFox
 ###JavaScript
 ###CSS
+
+##Common
+###JavaScript
+*   проверка наличия нативного скролла ```javascript
+function detect (testElement) {
+    var completedStyle = documentDefaultView.getComputedStyle(testElement, null);
+    return (completedStyle.webkitOverflowScrolling === 'touch')
+        && ((completedStyle.overflowX === 'auto')
+        || (completedStyle.overflowX === 'scroll')
+        || (completedStyle.overflowY === 'scroll'));
+}
+```
