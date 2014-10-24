@@ -33,10 +33,10 @@ Micro tips for mobile web dev.
 
 ```javascript
 function detect (testElement) {
-    var сomputedStyle = documentDefaultView.getComputedStyle(testElement, null);
-    return (сomputedStyle.webkitOverflowScrolling === 'touch')
-        && ((сomputedStyle.overflowX === 'auto')
-        || (сomputedStyle.overflowX === 'scroll')
-        || (сomputedStyle.overflowY === 'scroll'));
+    var computedStyle = documentDefaultView.getComputedStyle(testElement, null);
+    return (computedStyle.webkitOverflowScrolling === 'touch')
+        && ((computedStyle.overflowX === 'auto')
+        || (computedStyle.overflowX === 'scroll')
+        || (computedStyle.overflowY === 'scroll'));
 }
 ```
