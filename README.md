@@ -14,11 +14,13 @@ Micro tips for mobile web dev.
 ##Chrome for Android
 ###JavaScript
 *   для блокирования браузерного скрола без блокировки стандартного  поведения ссылок необходимо сделать `e.preventDefault();` **в каждом** `touchmove`
+
 ###CSS
 
 ##Android Browser
 ###JavaScript
 *   для блокирования браузерного скрола без блокировки стандартного  поведения ссылок необходимо сделать `e.preventDefault();` **в каждом** `touchmove`
+
 ###CSS
 
 ##Android FireFox
@@ -28,12 +30,13 @@ Micro tips for mobile web dev.
 ##Common
 ###JavaScript
 *   проверка наличия нативного скролла
+
 ```javascript
 function detect (testElement) {
-    var completedStyle = documentDefaultView.getComputedStyle(testElement, null);
-    return (completedStyle.webkitOverflowScrolling === 'touch')
-        && ((completedStyle.overflowX === 'auto')
-        || (completedStyle.overflowX === 'scroll')
-        || (completedStyle.overflowY === 'scroll'));
+    var сomputedStyle = documentDefaultView.getComputedStyle(testElement, null);
+    return (сomputedStyle.webkitOverflowScrolling === 'touch')
+        && ((сomputedStyle.overflowX === 'auto')
+        || (сomputedStyle.overflowX === 'scroll')
+        || (сomputedStyle.overflowY === 'scroll'));
 }
 ```
